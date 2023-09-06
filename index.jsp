@@ -1,4 +1,4 @@
-<%@ page contentType = "text/html;charset=utf-8" %>
+<%@ page contentType = "text/html;charset=utf-8" %> <!-- 페이지 지시자 <&~&> -->
 <%@ page import="example.*" %> 
 <%
     HelloWorld h = new HelloWorld();
