@@ -5,6 +5,6 @@
 %> <!-- new 연산자를 이용하여 객체 생성 해 줌. -->
 <html>
 <body>
-    message = <%=h.hello() %>
+    메시지는 = <%=h.hello() %> 입니다.
 </body>	
 </html>
