@@ -1,5 +1,6 @@
 <%@ page contentType = "text/html;charset=utf-8" %> <!-- 페이지 지시자 <&~&> -->
 <%@ page import="example.*" %> <!-- example 하위에 있는 모든 소스코드를 연동해주겠다. -->
+<%@ page import="java.util.Date"%>    <!-- 클래스 컴파일 에러 해결 -->
 <%
     HelloWorld h = new HelloWorld();
 %> <!-- new 연산자를 이용하여 객체 생성 해 줌. -->
@@ -37,6 +38,21 @@
     </div>
     <footer class="container">
         <p>&copy; 웹마켓 최하단 상태바</p>
+        <%
+	        Date day = new java.util.Date();
+	        String am_pm;
+	        int hour = day.getHours();
+	        int minute = day.getMinutes();
+	        int second = day.getSeconds();
+	        if (hour / 12 == 0) {
+		        am_pm = "AM";
+	        } else {
+		        am_pm = "PM";
+		        hour = hour - 12;
+	        }
+	        String CT = hour + ":" + minute + ":" + second + " " + am_pm;
+	        out.println("현재 접속  시각: " + CT + "\n");
+        %>
     </footer>
 </body>	
 </html>
