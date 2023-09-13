@@ -2,6 +2,10 @@
     HelloWorld h = new HelloWorld();
 %> <!-- new 연산자를 이용하여 객체 생성 해 줌. -->
 <html>
+    <script>
+	window.open("popup/popup1.jsp", "popup", "width=365, height = 250, left = 0, top=0")
+    </script>
+
     <head>
         <%@ page contentType = "text/html;charset=utf-8" %> <!-- 페이지 지시자 <&~&> -->
         <%@ page import="example.*" %> <!-- example 하위에 있는 모든 소스코드를 연동해주겠다. -->
