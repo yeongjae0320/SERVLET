@@ -10,7 +10,7 @@ String tagline = "하단 페이지 : 확인";%>
     </div>
 </div>
 <div class="card bg-dark text-white">
-    <img src="image/top.jpg" class="card-img" alt="메인이미지">
+    <img src="image/body_image.jpg" class="card-img" alt="메인이미지">
     <div class="card-img-overlay">
         <h5 class="card-title">
             의류 시즌 이벤트
