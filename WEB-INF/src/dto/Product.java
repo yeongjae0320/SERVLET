@@ -1,7 +1,7 @@
 package dto;
 import java.io.Serializable; // 직렬화 클래스 연동
 
-public class Product implements Serializable { // 인터페이스 선언
+public class Product implements Serializable { // 인터페이스 선언 implements->직렬화
 
 	private static final long serialVersionUID = -4274700572038677000L;
 
