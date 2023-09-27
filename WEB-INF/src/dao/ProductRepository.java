@@ -2,7 +2,7 @@ package dao;
 import java.util.ArrayList;
 import dto.Product;
 
-public class ProductRepository {
+public class ProductRepository {    //실제 상품들의 정보를 set 해주는 함수
     private ArrayList<Product> listOfProducts = new ArrayList<Product>();    //ArrayList를 Product로 캐스팅
     
     public ProductRepository() {
