@@ -47,6 +47,27 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Outer3.setManufacturer("VTWO");
 		Outer3.setUnitsInStock(1000);
 		Outer3.setCondition("Old");
+        
+        Product Pants1 = new Product("P1240", "원턱 와이드 데님", 20000);
+		Pants1.setDescription("원턱 디테일, 와이드한 실루엣으로 이상적인 핏을 연출, 7'S COTTON 100%");
+		Pants1.setCategory("Pants");
+		Pants1.setManufacturer("SIGNATURE");
+		Pants1.setUnitsInStock(1000);
+		Pants1.setCondition("Old");
+        
+        Product Pants2 = new Product("P1241", "사이드 턱 와이드 스웨트 팬츠", 52800);
+		Pants2.setDescription("COLOR:AVOCADO, FABRIC:COTTON 50%, POLY 50%, 코튼 폴리가 혼방 된 3단 쮸리 원단을 인터록 합포를 함");
+		Pants2.setCategory("Pants");
+		Pants2.setManufacturer("BASEMOMENT");
+		Pants2.setUnitsInStock(1000);
+		Pants2.setCondition("New");
+        
+        Product Pants3 = new Product("P1242", "미드웨일 코듀로이 와이드 팬츠", 63900);
+		Pants3.setDescription("[패키지], SJLP1382, COTTON 100%, COLOR LIST:DEEPGREEN/LIGHTBEIGE/BROWN/CHARCOAL/DUSTYBEIGE/GRAY");
+		Pants3.setCategory("Pants");
+		Pants3.setManufacturer("FP");
+		Pants3.setUnitsInStock(1000);
+		Pants3.setCondition("Refurbished");
 		
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
 
@@ -56,6 +77,9 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
         listOfProducts.add(Outer1);
         listOfProducts.add(Outer2);
         listOfProducts.add(Outer3);
+        listOfProducts.add(Pants1);
+        listOfProducts.add(Pants2);
+        listOfProducts.add(Pants3);
         
 		// listOfProducts.add(상품명);
 	}
