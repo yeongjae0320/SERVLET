@@ -55,15 +55,15 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Pants1.setUnitsInStock(1000);
 		Pants1.setCondition("Old");
         
-        Product Pants2 = new Product("P1241", "사이드 턱 와이드 스웨트 팬츠", 52800);
+        Product Pants2 = new Product("P1241", "사이드턱 와이드 팬츠", 52800);
 		Pants2.setDescription("COLOR:AVOCADO, FABRIC:COTTON 50%, POLY 50%, 코튼 폴리가 혼방 된 3단 쮸리 원단을 인터록 합포를 함");
 		Pants2.setCategory("Pants");
 		Pants2.setManufacturer("BASEMOMENT");
 		Pants2.setUnitsInStock(1000);
 		Pants2.setCondition("New");
         
-        Product Pants3 = new Product("P1242", "미드웨일 코듀로이 와이드 팬츠", 63900);
-		Pants3.setDescription("[패키지], SJLP1382, COTTON 100%, COLOR LIST:DEEPGREEN/LIGHTBEIGE/BROWN/CHARCOAL/DUSTYBEIGE/GRAY");
+        Product Pants3 = new Product("P1242", "미드웨일 와이드 팬츠", 63900);
+		Pants3.setDescription("[패키지], SJLP1382, COTTON 100%, COLOR LIST:DEEPGREEN/LIGHTBEIGE/BROWN");
 		Pants3.setCategory("Pants");
 		Pants3.setManufacturer("FP");
 		Pants3.setUnitsInStock(1000);

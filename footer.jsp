@@ -1,7 +1,7 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
 <%@ page import="example.*" %>
 <footer class="container">
-     <p> <br> &copy; 쇼핑몰 대표 : 홍길동, 고유번호 : 20111234, 연락처 : admin@nate.com <br> 
+     <p> <br> &copy; 쇼핑몰 대표 : 김영재, 고유번호 : 20200973, 연락처 : poweryjkim@naver.com <br> 
         <%
     	ShopTime time = new ShopTime();
          %>    
