@@ -6,32 +6,32 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
     private ArrayList<Product> listOfProducts = new ArrayList<Product>();    //ArrayList를 Product로 캐스팅
     
     public ProductRepository() {
-        Product phone = new Product("P1234", "iPhone 6s", 800000);
-		phone.setDescription("4.7-inch, 1334X750 Renina HD display, 8-megapixel iSight Camera");
-		phone.setCategory("Smart Phone");
-		phone.setManufacturer("Apple");
-		phone.setUnitsInStock(1000);
-		phone.setCondition("New");
+        Product Tshirts1 = new Product("P1234", "베이직 데일리 긴팔 티셔츠", 9900);
+		Tshirts1.setDescription("품번:BEZK5101B01, 색상:WHITE, 원단:겉감-면100%");
+		Tshirts1.setCategory("Top");
+		Tshirts1.setManufacturer("CHASECULT");
+		Tshirts1.setUnitsInStock(1000);
+		Tshirts1.setCondition("New");
 
-        Product notebook = new Product("P1235", "LG PC 그램", 1500000);
-		notebook.setDescription("13.3-inch, IPS LED display, 5rd Generation Intel Core processors");
-		notebook.setCategory("Notebook");
-		notebook.setManufacturer("LG");
-		notebook.setUnitsInStock(1000);
-		notebook.setCondition("Refurbished");
+        Product Shirts1 = new Product("P1235", "옥스포드 와이드 셔츠", 58000);
+		Shirts1.setDescription("4 COLORS(CREAM/LIGHT GREY(품절)/SKY BLUE/SAX BLUE)");
+		Shirts1.setCategory("Top");
+		Shirts1.setManufacturer("XEROBNR");
+		Shirts1.setUnitsInStock(1000);
+		Shirts1.setCondition("Refurbished");
 
-		Product tablet = new Product("P1236", "Galaxy Tab S", 900000);
-		tablet.setDescription("212.8*125.6*6.6mm,  Super AMOLED display, Octa-Core processor");
-		tablet.setCategory("Tablet");
-		tablet.setManufacturer("Samsung");
-		tablet.setUnitsInStock(1000);
-		tablet.setCondition("Old");
+		Product Shirts2 = new Product("P1236", "오버핏 포켓 캔버스 셔츠", 45000);
+		Shirts2.setDescription("[무료반품], 5 COLORS(SAND BEIGE/BEIGE/SMOKE GREEN/OLIVE KNAKI/BLACK)");
+		Shirts2.setCategory("Top");
+		Shirts2.setManufacturer("TONES");
+		Shirts2.setUnitsInStock(1000);
+		Shirts2.setCondition("Old");
 		
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
 
-		listOfProducts.add(phone);
-		listOfProducts.add(notebook);
-		listOfProducts.add(tablet);
+		listOfProducts.add(Tshirts1);
+		listOfProducts.add(Shirts1);
+		listOfProducts.add(Shirts2);
 		// listOfProducts.add(상품명);
 	}
 

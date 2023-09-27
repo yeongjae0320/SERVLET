@@ -3,7 +3,7 @@
 <%@ page import="dto.Product"%>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <%-- CLASS는 스타일 적용시에 사용 되는 이름, 중첩 가능 --%>
-<%! String greeting = "현재 페이지는 VGA 그래픽 카드 상품 목록입니다.";
+<%! String greeting = "현재 페이지는 의류 상품 목록입니다.";
 	String tagline = "하단 페이지 : 확인";%>
     <div class="container">
 	<div class="jumbotron">
