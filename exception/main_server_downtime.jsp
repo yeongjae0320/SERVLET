@@ -17,6 +17,7 @@
                 font-weight: bold;
                 text-align: center;
                 margin-top: 150px;
+                color: red;
             }
             h2 {
                 font-size: 30px;
@@ -31,13 +32,13 @@
             }
         </style>
         <h1>
-            서버 점검 공지
+            404 ERROR
         </h1>
         <h2>
-            404 ERROR
+            잘못된 페이지입니다.
         </h2>
         <p>
-            잘못된 페이지입니다.
+            올바른 접근을 통하여 사이트를 재접속 해주세요.
         </p>
     </body>
 </html>
