@@ -6,7 +6,7 @@
         <script>
 	    window.open("popup/popup1.jsp", "popup", "width=365, height=250, left=0, top=0")
         </script>
-        <%@ page contentType = "text/html;charset=utf-8" %> <!-- 페이지 지시자 <&~&> -->
+        <%@ page contentType = "text/html; charset=utf-8" %> <!-- 페이지 지시자 <&~&> -->
         <%@ page import="example.*" %> <!-- example 하위에 있는 모든 소스코드를 연동해주겠다. -->
         <%@ page import="java.util.Date"%>    <!-- 클래스 컴파일 에러 해결 -->
         <%@ page buffer="1kb" autoFlush="true" %>
