@@ -87,5 +87,17 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 	public ArrayList<Product> getAllProducts() {
 		return listOfProducts;
 	}
+    
+    public Product getProductById(String productid) {
+        Product productById = null;
+        for (int i = 0; listOfProducts.size(); i++) {
+            Product product = listOfProducts.get(i);
+			if (product != null && product.getProductId() != null && product.getProductId().equals(productId)) {
+				productById = product;
+				break;
+			}
+        }
+        return productById;
+    }
 
 }
