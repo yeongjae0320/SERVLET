@@ -17,6 +17,7 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Tshirts1.setManufacturer("CHASECULT");
 		Tshirts1.setUnitsInStock(1000);
 		Tshirts1.setCondition("New");
+        Tshirts1.setFilename("P1234.jpg");
 
         Product Shirts1 = new Product("P1235", "옥스포드 와이드 셔츠", 58000);
 		Shirts1.setDescription("4 COLORS(CREAM/LIGHT GREY(품절)/SKY BLUE/SAX BLUE)");
@@ -24,6 +25,7 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Shirts1.setManufacturer("XEROBNR");
 		Shirts1.setUnitsInStock(1000);
 		Shirts1.setCondition("Refurbished");
+        Shirts1.setFilename("P1235.jpg");
 
 		Product Shirts2 = new Product("P1236", "오버핏 포켓 캔버스 셔츠", 45000);
 		Shirts2.setDescription("[무료반품], 5 COLORS(SAND BEIGE/BEIGE/SMOKE GREEN/OLIVE KNAKI/BLACK)");
@@ -31,6 +33,7 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Shirts2.setManufacturer("TONES");
 		Shirts2.setUnitsInStock(1000);
 		Shirts2.setCondition("Old");
+        Shirts2.setFilename("P1236.jpg");
         
         Product Outer1 = new Product("P1237", "울 해링턴 자켓", 79900);
 		Outer1.setDescription("[무료반품], [리뉴얼], 우아한 실루엣의 고급스러운 무드가 돋보이는 해링턴 자켓, ZIPPER:2-WAY");
@@ -38,6 +41,7 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Outer1.setManufacturer("TONES");
 		Outer1.setUnitsInStock(1000);
 		Outer1.setCondition("Refurbished");
+        Outer1.setFilename("P1237.jpg");
         
         Product Outer2 = new Product("P1238", "후디드 윈드 브레이커", 68900);
 		Outer2.setDescription("오더블유오씨에서 직접 개발한 등고선 아트웍을 이용한 윈드 브레이커, 안감 상부 매시 원단 사용으로 통기성 확보");
@@ -45,13 +49,15 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Outer2.setManufacturer("OWOC");
 		Outer2.setUnitsInStock(1000);
 		Outer2.setCondition("New");
-        
+        Outer2.setFilename("P1238.jpg");
+
         Product Outer3 = new Product("P1239", "코튼 스트링 점퍼", 60000);
 		Outer3.setDescription("FABRIC:COTTON 100%, WASHING:DRY CLEAN/DO NOT BLEACH, 소매 버튼 여밈");
 		Outer3.setCategory("Outer");
 		Outer3.setManufacturer("VTWO");
 		Outer3.setUnitsInStock(1000);
 		Outer3.setCondition("Old");
+        Outer3.setFilename("P1239.jpg");
         
         Product Pants1 = new Product("P1240", "원턱 와이드 데님", 20000);
 		Pants1.setDescription("원턱 디테일, 와이드한 실루엣으로 이상적인 핏을 연출, 7'S COTTON 100%");
@@ -59,6 +65,7 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Pants1.setManufacturer("SIGNATURE");
 		Pants1.setUnitsInStock(1000);
 		Pants1.setCondition("Old");
+        Pants1.setFilename("P1240.jpg");
         
         Product Pants2 = new Product("P1241", "사이드턱 와이드 팬츠", 52800);
 		Pants2.setDescription("COLOR:AVOCADO, FABRIC:COTTON 50%, POLY 50%, 코튼 폴리가 혼방 된 3단 쮸리 원단을 인터록 합포를 함");
@@ -66,6 +73,7 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Pants2.setManufacturer("BASEMOMENT");
 		Pants2.setUnitsInStock(1000);
 		Pants2.setCondition("New");
+        Pants2.setFilename("P1241.jpg");
         
         Product Pants3 = new Product("P1242", "미드웨일 와이드 팬츠", 63900);
 		Pants3.setDescription("[패키지], SJLP1382, COTTON 100%, COLOR LIST:DEEPGREEN/LIGHTBEIGE/BROWN");
@@ -73,6 +81,7 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 		Pants3.setManufacturer("FP");
 		Pants3.setUnitsInStock(1000);
 		Pants3.setCondition("Refurbished");
+        Pants3.setFilename("P1242.jpg");
 		
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
 
