@@ -4,6 +4,11 @@ import dto.Product;
 
 public class ProductRepository {    //실제 상품들의 정보를 set 해주는 함수
     private ArrayList<Product> listOfProducts = new ArrayList<Product>();    //ArrayList를 Product로 캐스팅
+    private static ProductRepository instance = new ProductRepository();
+    
+    public static ProductRepository getInstance() {
+        return instance;
+    }
     
     public ProductRepository() {
         Product Tshirts1 = new Product("P1234", "베이직 데일리 긴팔 티셔츠", 9900);
@@ -98,6 +103,10 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
 			}
         }
         return productById;
+    }
+    
+    public void addProduct(Product product) {
+        listOfProducts.add(product);
     }
 
 }
