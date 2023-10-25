@@ -40,7 +40,7 @@
             올바른 접근을 통하여 사이트를 재접속 해주세요.
         </h2>
         <div class="card bg-dark text-white">
-    <img src="image/body_image.jpg" class="card-img" alt="메인이미지">
+    <img src="/image/body_image.jpg" class="card-img" alt="메인이미지">
     <div class="card-img-overlay">
         <h5 class="card-title">
             서버 점검 공지
