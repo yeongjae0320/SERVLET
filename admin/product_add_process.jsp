@@ -27,7 +27,7 @@
 	//String unitsInStock = request.getParameter("unitsInStock");
 	//String condition = request.getParameter("condition");
 
-    String productId = multi.getParameter("productid");
+    String productId = multi.getParameter("productId");
 	String name = multi.getParameter("name");
 	String unitPrice = multi.getParameter("unitPrice");
 	String description = multi.getParameter("description");
