@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
-    <error-page>
+    <!-- <error-page>
         <error-code>404</error-code>
         <location>/exception/main_server_downtime.jsp</location>
-    </error-page>
+    </error-page> -->
     
     <security-role>
 		<description></description >
