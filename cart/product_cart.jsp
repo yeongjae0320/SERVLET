@@ -3,6 +3,7 @@
 <%@ page import="dto.Product"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="dao.ProductRepository"%>
+<%@ page import="example.*" %>
 <html>
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -71,6 +72,13 @@
 	</div>
 	<hr>
 </div>
-<jsp:include page="../footer.jsp" />
+<footer class="container">
+     <p> <br> &copy; 쇼핑몰 대표 : 김영재, 고유번호 : 20200973, 연락처 : poweryjkim@naver.com <br> 
+        <%
+    	ShopTime time = new ShopTime();
+         %>    
+        오늘 날짜와 시간 : <%=time.timenow() %>
+        </p>
+</footer>
 </body>
 </html>
