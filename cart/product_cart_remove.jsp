@@ -16,7 +16,14 @@
 		response.sendRedirect("../exception/product_not_found.jsp");
 	}
 
-	ArrayList<Product> cartList = (ArrayList<Product>) session.getAttribute("cartlist");
+    ArrayList<Product> cartList = (ArrayList<Product>) session.getAttribute("cartlist");
+
+    // 세션 값이 비어 있는지 확인
+    if (cartList == null) {
+        cartList = new ArrayList<Product>();
+        session.setAttribute("cartlist", cartList);
+    }
+
 	Product goodsQnt = new Product();
 	for (int i = 0; i < cartList.size(); i++) { // 상품리스트 하나씩 출력하기
 		goodsQnt = cartList.get(i);
