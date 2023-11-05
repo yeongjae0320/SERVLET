@@ -18,7 +18,7 @@
 
     ArrayList<Product> cartList = (ArrayList<Product>) session.getAttribute("cartlist");
 
-    // 세션 값이 비어 있는지 확인
+    // 세션 값이 비어 있는지 확인(연습문제:새로추가)
     if (cartList == null) {
         cartList = new ArrayList<Product>();
         session.setAttribute("cartlist", cartList);
