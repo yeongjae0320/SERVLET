@@ -5,6 +5,20 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+        <script>
+        function validateDate() {
+        var inputDate = new Date(document.getElementById("shippingDate").value);
+        var today = new Date();
+
+        // 현재 날짜
+        today.setHours(0, 0, 0, 0);
+
+        if (inputDate <= today) {
+            alert("오늘 이후의 날짜를 선택해주세요.");
+            document.getElementById("shippingDate").value = "";
+        }
+    }
+        </script>
         <title>배송 정보</title>
     </head>
 <body>
@@ -26,7 +40,9 @@
            <div class="form-group row">
 	<label class="col-sm-2">배송일</label>
 	<div class="col-sm-3">
-		<input name="shippingDate" type="text" class="form-control" />(yyyy/mm/dd)
+		<!--<input name="shippingDate" type="text" class="form-control" />(yyyy/mm/dd)-->
+        <input type="date" name="shippingDate" id="shippingDate" min="<%=java.time.LocalDate.now()%>" onchange="validateDate()">
+        
 	</div>
 	  </div>
 	 <div class="form-group row">
