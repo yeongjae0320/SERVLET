@@ -22,7 +22,7 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
         Product Shirts1 = new Product("P1235", "옥스포드 와이드 셔츠", 58000);
 		Shirts1.setDescription("4 COLORS(CREAM/LIGHT GREY(품절)/SKY BLUE/SAX BLUE)");
 		Shirts1.setCategory("Top");
-		Shirts1.setManufacturer("XEROBNR");
+        Shirts1.setManufacturer("XEROBNR");
 		Shirts1.setUnitsInStock(1000);
 		Shirts1.setCondition("Refurbished");
         Shirts1.setFilename("P1235.jpg");
@@ -60,7 +60,7 @@ public class ProductRepository {    //실제 상품들의 정보를 set 해주�
         Outer3.setFilename("P1239.jpg");
         
         Product Pants1 = new Product("P1240", "원턱 와이드 데님", 20000);
-		Pants1.setDescription("원턱 디테일, 와이드한 실루엣으로 이상적인 핏을 연출, 7'S COTTON 100%");
+		Pants1.setDescription("원턱 디테일, 와이드한 실루엣으로 이상적인 핏을 연출, 7S COTTON 100%");
 		Pants1.setCategory("Pants");
 		Pants1.setManufacturer("SIGNATURE");
 		Pants1.setUnitsInStock(1000);
