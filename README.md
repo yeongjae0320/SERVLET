@@ -56,6 +56,21 @@ index.jsp와 다른 점은 이 파일은 상품의 상세 정보만 표시한다
 
 ### 2023년 10월 11일 : 쇼핑몰 상품 등록 추가 - 7주차
 
+지금까지 만든 파일들은 사용자용 페이지들인데, 관리자용 페이지를 생성하였다.
+admin 폴더를 생성하고 기존 파일들을 복사하여 파일 이름들의 뒤에 ad를 추가하여 관리자용 파일로 명명하였다.
+top_menu.jsp에 메뉴 링크를 관리자모드 하나 추가하였고, 클릭하면 index_ad.jsp 파일로 가게 하였다.
+관리자용 메인 페이지의 메뉴 링크를 모두 수정해주었고, product_add.jsp 파일을 새로 작성하였다.
+쇼핑몰의 상품을 등록하는 폼 화면이다. post 방식으로 전송하였다.
+product_add_process.jsp를 만들어 Prouct, ProductRepository 클래스를 import하였고, request.getParameter()를 사용하여 폼으로부터 전송된 데이터를 각각의 변수에 저장하였다. 마지막은 index_ad.jsp 페이지로 리다이렉트하였다.
+ProductRepository.java를 수정하였는데, 데이터 추가를 위해 객체 변수 인스턴스를 사용하였다.
+또, body_main.jsp 파일에서 기존에 사용했던 자바 빈즈를 제거하고 import 방식으로 dao 패키지의 ProductRepository를 import 하는것으로 수정하였다. 현재 생성된 객체의 상품 목록을 출력하게 하였고, 파일 및 폴더 변경으로 경로를 수정하였다.
+product_detail_ad.jsp는 기존에 상품 상세 페이지로 또한 자바 빈즈를 제거하고 import 방식으로 변경하였다.
+Product.java와 ProductRepository.java 파일에서 이미지 파일 추가를 위해 파일명 변수와 Set, Get 메소드를 추가하였다.
+body_main.jsp 파일의 메인 화면 이미지 로드 부분에서 product 객체의 getFilename() 메서드를 호출하여 해당 제품의 이미지 파일 이름을 가져온 후 그 값을 사용하게 코드를 바꿔주었다.
+파일 업로드를 위한 라이브러리 cos.jar을 lib 폴더 안에 업로드하였다. 그리고 product_detail.jsp 파일에서도 이미지 로드 부분을 동일하게 바꿔주었다.
+product_add.jsp 파일에서 파일 업로드를 위해 폼 전송 타입을 바꿔주었고, 이미지를 등록할 수 있게 input type file을 만들어주었다.
+product_add_process.jsp에서 라이브러리 사용을 위해 import문을 추가하고 파일 업로드에 필요한 각 변수를 초기화하였다. realFolder로 웹 어플리케이션 상의 실제 경로를 얻어와 인코딩 타입과 최대 업로드 파일 크기를 설정하였다. 파일 업로드 시 동일한 이름의 파일이 존재하는지, 파일 이름을 자동으로 변경하는 정책을 제공하는 클래스를 사용하였고, 파일 업로드를 처리하기 위해 MultipartRequest 클래스를 사용하였다.
+
 ### 2023년 10월 25일 : 쇼핑몰 로그인 기능 추가 - 9주차
 
 ### 2023년 11월 1일 : 세션 및 장바구니 기능 추가 - 10주차
