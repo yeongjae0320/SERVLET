@@ -43,6 +43,17 @@ body_main.jsp를 수정하는데 dto 패키지의 Product 패키지 연동을 �
 
 ### 2023년 10월 4일 : 쇼핑몰 상품 상세 페이지 추가 - 6주차
 
+5주차에 만든 ProductRepository.java 파일을 수정하였다.
+기존에는 getAllProducts 메소드로 전체 상품 정보를 리턴했는데 링크 클릭을 통해 요청된 상품 id를 리턴하는 새로운 메소드를 추가하였다.
+Product 객체를 저장하는 리스트 listOfProducts를 순회하여 각각의 객체에 대해 productId가 일치하는지를 확인하는 코드를 구현하였다.
+body_main.jsp를 수정하여 마우스로 링크를 클릭하면 새로운 페이지가 뜨는 기능을 구현하였다.
+새로운 파일 product_detail.jsp를 만들었는데 이 파일은 상/하단 메뉴를 포함하여 index.jsp와 동일한 화면을 보여주게 하였다.
+index.jsp와 다른 점은 이 파일은 상품의 상세 정보만 표시한다는 것이다. 내장 객체를 활용하여 정보를 받았다.
+정상적이지 않은 상품 또는 id가 잘못 전달될 수 있기 때문에 이를 위해 예외 처리를 위한 exception 폴더를 만들어 product_not_found.jsp 파일을 생성하였다. 이 파일은 top_banner.jsp 파일과 top_menu.jsp 파일을 include하여 메뉴바를 index.jsp 파일과 동일하게 하였다. 화면에 뜨는 글만 바꿔서 에러 페이지로 만들었다.
+<br>
+<br>
+* 연습문제 -> 전체 상품 상세페이지, 메인 페이지도 예외처리 하였다. index.jsp에 대한 예외처리 페이지를 만들었다. web.xml에서 error-page, error-code:404, location 태그를 사용하고 파일명은 exception 폴더 안에 main_server_downtime.jsp를 만들어 입력했다.
+
 ### 2023년 10월 11일 : 쇼핑몰 상품 등록 추가 - 7주차
 
 ### 2023년 10월 25일 : 쇼핑몰 로그인 기능 추가 - 9주차
