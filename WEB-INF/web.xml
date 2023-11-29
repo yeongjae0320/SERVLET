@@ -27,6 +27,7 @@
 		<auth-method>FORM</auth-method>
 		<form-login-config>
 			<form-login-page>/login/login.jsp</form-login-page>
+            <form-login-page>/login/login_user.jsp</form-login-page>
 			<form-error-page>/login/login_failed.jsp</form-error-page>
 		</form-login-config>
 	</login-config>
