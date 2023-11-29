@@ -52,7 +52,9 @@ index.jsp와 다른 점은 이 파일은 상품의 상세 정보만 표시한다
 정상적이지 않은 상품 또는 id가 잘못 전달될 수 있기 때문에 이를 위해 예외 처리를 위한 exception 폴더를 만들어 product_not_found.jsp 파일을 생성하였다. 이 파일은 top_banner.jsp 파일과 top_menu.jsp 파일을 include하여 메뉴바를 index.jsp 파일과 동일하게 하였다. 화면에 뜨는 글만 바꿔서 에러 페이지로 만들었다.
 <br>
 <br>
-* 연습문제 -> 전체 상품 상세페이지, 메인 페이지도 예외처리 하였다. index.jsp에 대한 예외처리 페이지를 만들었다. web.xml에서 error-page, error-code:404, location 태그를 사용하고 파일명은 exception 폴더 안에 main_server_downtime.jsp를 만들어 입력했다.
+* 연습문제 -> 전체 상품 상세페이지, 메인 페이지도 예외처리 하였다. index.jsp에 대한 예외처리 페이지를 만들었다.
+web.xml에서 error-page, error-code:404, location 태그를 사용하고 파일명은 exception 폴더 안에 main_server_downtime.jsp를 만들어 입력했다.
+만들어진 예외처리는 주석처리를 하여 현재 실행되게 해두지는 않았다.
 
 ### 2023년 10월 11일 : 쇼핑몰 상품 등록 추가 - 7주차
 
