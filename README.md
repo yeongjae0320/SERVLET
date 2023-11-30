@@ -184,6 +184,7 @@ java.sql.을 import하고 db_conn.jsp 파일을 include 지시문을 사용하�
 product 테이블을 조회하고 연결을 생성하고 rs 객체를 사용하여 쿼리를 실행시켰다.
 또, 기존 리스트 코드 부분을 삭제하였다. 반복문이 끝난 이후는 db 연결을 종료시켰다.
 product_add_procss.jsp에서 body_main.jsp파일처럼 db 연동을 위해 sql 패키지를 추가하고 연결을 연동시켰다.
+로그인 에러가 생기기 때문에 기존 tomcat-users.xml 파일을 수정하기 위해 터미널 vi 연결하여 작업을 해주었다.
 product 테이블에 데이터를 삽입하는 sql 쿼리를 정의하는데 values()안에 ?를 설정하여 나중에 바인딩할 매개변수를 나타내었다.
 setString 메소드를 사용하여 각 ?에 대응하는 위치에 값을 설정해주었다.
 executeUpdate 메소드를 호출하여 sql 쿼리를 실행하고, 데이터베이스에 변경을 적용하였다.
