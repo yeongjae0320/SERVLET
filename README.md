@@ -221,7 +221,7 @@ servlet 패키지의 클래스들을 import하고 MultipartRequest 객체를 생
 상품 수정이 완료되면 다시 상품 수정 페이지로 이동하게 된다.
 <br>
 <br>
-* 연습문제 -> 삭제 기능을 구현하였다. 이 삭제 기능은 product_delete.jsp 파일이고, admin 폴더 안에서 생성하였다.
+* 연습문제 -> 상품 삭제 기능을 구현하였다. 이 삭제 기능은 product_delete.jsp 파일이고, admin 폴더 안에서 생성하였다.
 product_delete.jsp 파일에는 mysql 데이터베이스를 연결하여 jdbc 드라이버를 로드하고, 연결 정보를 사용하여 
 DriveManager.getConnection을 호출하여 연결해주었다.
 id 파라미터를 읽어 오는데 이는 삭제할 상품의 id이다.
