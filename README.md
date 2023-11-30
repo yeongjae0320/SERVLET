@@ -166,7 +166,41 @@ validateDate() 함수에서는 사용자가 입력한 날짜 값을 가져와 Da
 
 ### 2023년 11월 15일 : 쇼핑몰 상품 관리 페이지 추가(1) - 12주차
 
-
+새로운 컨테이너를 생성하였다. 그룸 ide 터미널에서 명령어를 입력하고 탐캣 라이브러리 폴더에 복사하였다.
+초기 설치 이후 관리자 비밀번호를 설정해야 했다. 현재 root 패스워드는 비어있다.
+mysql 서비스를 시작하기 위해서 service mysql start를 입력해주었고 보안 설정을 실행하여 비밀번호를 123123으로 설정하였다.
+데이터베이스를 만들어주고 use문을 사용하여 데이터베이스 접근하였다.
+product 테이블을 만들었다. column으로는 p_id, p_name, p_unitPrice 등으로 해주었다.
+product 테이블에 데이터를 삽입하였다. insert문을 사용하여 기존에 ProductRepository.java에 저장했던 상품들의 id와 가격 등을 입력하였다.
+conn_test.jsp 파일을 최상위 폴더에 생성하여 파일을 mysql 데이터베이스에 연결하고 
+특정 테이블 product에서 데이터를 가져와 웹 페이지에 출력하게 하였다. statement 객체를 사용하여 sql 쿼리를 실행하고, 
+결과를 ResultSet에 저장하였다. while문 루프를 통해 각 행의 데이터를 가져와 웹 페이지에 출력하는 것이다.
+db 폴더를 생성하고 그 안에 db_conn.jsp 파일을 생성한다.
+Connection, PreparedStatement, ResultSet 객체를 초기화하고 mysql jdbc 드라이버를 로드하였다.
+기존 Statement보다 sql 쿼리문 구현이 훨씬 간결하다.
+기존 top_menu.jsp 파일에서 가독성을 위해 메뉴 이름을 상품목록(기본 홈)으로 수정하였다.
+body_main.jsp 파일에서 db 연동을 위해 sql 패키지를 추가하고 연결을 연동시켰다.
+java.sql.을 import하고 db_conn.jsp 파일을 include 지시문을 사용하여 포함시켰다.
+product 테이블을 조회하고 연결을 생성하고 rs 객체를 사용하여 쿼리를 실행시켰다.
+또, 기존 리스트 코드 부분을 삭제하였다. 반복문이 끝난 이후는 db 연결을 종료시켰다.
+product_add_procss.jsp에서 body_main.jsp파일처럼 db 연동을 위해 sql 패키지를 추가하고 연결을 연동시켰다.
+product 테이블에 데이터를 삽입하는 sql 쿼리를 정의하는데 values()안에 ?를 설정하여 나중에 바인딩할 매개변수를 나타내었다.
+setString 메소드를 사용하여 각 ?에 대응하는 위치에 값을 설정해주었다.
+executeUpdate 메소드를 호출하여 sql 쿼리를 실행하고, 데이터베이스에 변경을 적용하였다.
+<br>
+<br>
+* 연습문제 -> 첫 번째, 데이터베이스 수정 작업을 하였다.
+강의시간에는 상품 리스트 데이터를 3개만 추가하였는데 추가로 입력 안된 상품 정보 6개의 상품을 더하여 총 9개의 데이터를 만들었다.
+두 번째, 관리자 패스워드를 변경해야했다. 그리고 변경이 되면 소스코드로 설정했던 패스워드도 변경해야했다.
+먼저 service mysql start를 하여 기존 패스워드 123123으로 접속을 한 후 user mysql;을 입력하여 mysql 데이터베이스 접근하였다.
+show tables;를 입력하면 여러 개의 table들이 뜨는데, 그 중에서 desc user;을 하면 user 테이블에 어떤 열들이 있는지 확인할 수 있다.
+우리는 update 문을 통해 user의 password를 바꿔주어야 하는데, select user from user;을 확인해보면 root가 있는데 이 root의 비밀번호를 바꿔주었다.
+select password from user;을 입력하고 보면 해싱된 패스워드 값들을 볼 수 있는데 이 패스워드를 123123에서 123654로 바꿔주는 것이 목표였고, 
+바꿔주기 위해 다음과 같은 쿼리문을 입력하였다.
+Update mysql.user SET password = password('123654') where user = 'root'; 이 코드는 user columne 값이 root인 것을 찾아서 password를 123654로 바꿔준다는 쿼리문이다.
+select host from user;을 입력하면 host로 아이피와 ::1, localhost가 있는데, host에 대해서도 혹시 몰라 
+Update mysql.user SET password = password('123654') where host = '';문을 사용하여 각 host에 대해서도 password를 바꿔주었다.
+그리고 db_conn.jsp파일을 포함하여 password가 123123으로 저장했던 파일들을 123654로 바꿔주었다.
 
 ### 2023년 11월 22일 : 쇼핑몰 상품 관리 페이지 추가(2) - 13주차
 
