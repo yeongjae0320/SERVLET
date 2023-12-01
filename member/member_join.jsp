@@ -31,8 +31,9 @@
             <div class="form-group">
 				<label for="inputName">이름</label> 
 				<input  type="text" class="form-control" placeholder="Name" name='j_username' required>
-			</div>   
-			<button class="btn btn btn-lg btn-success btn-block" type="submit">가입</button>
+			</div> 
+			<button class="btn btn-primary" type="submit">가입</button>
+            <button class="btn btn-success" type="submit">로그인(이전페이지)</button>
 		</form>
 	</div>
 </div>
