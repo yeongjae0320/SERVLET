@@ -31,7 +31,19 @@
             <div class="form-group">
 				<label for="inputName">이름</label> 
 				<input  type="text" class="form-control" placeholder="Name" name='j_username' required>
-			</div> 
+			</div>
+            <div class="form-group">
+				<label for="inputEmail">메일주소</label> 
+				<input  type="text" class="form-control" placeholder="email" name='j_username' required>
+			</div>
+            <div class="form-group">
+				<label for="inputPhone">폰번호</label>
+				<input  type="text" class="form-control" placeholder="phone" name='j_username' required>
+			</div>
+            <div class="form-group">
+				<label for="inputAddress">주소</label> 
+				<input  type="text" class="form-control" placeholder="address" name='j_username' required>
+			</div>
 			<button class="btn btn-primary" type="submit">가입</button>
             <button class="btn btn-success" type="submit">로그인(이전페이지)</button>
 		</form>
