@@ -17,7 +17,7 @@
 		<div class="col-md-4 col-md-offset-4">
             <form class="form-signin" action="j_security_check" method="post">
 			<div class="form-group">
-				<label for="inputUserName">아이디</label> 
+				<label for="inputUserid">아이디</label> 
 				<input type="text" class="form-control" placeholder="ID" name='j_username' required autofocus>
 			</div>
 			<div class="form-group">
@@ -28,6 +28,10 @@
 				<label for="inputRePassword">패스워드 재입력</label> 
 				<input  type="password" class="form-control" placeholder="Password" name='j_password' required>
 			</div>
+            <div class="form-group">
+				<label for="inputName">이름</label> 
+				<input  type="text" class="form-control" placeholder="Name" name='j_username' required>
+			</div>   
 			<button class="btn btn btn-lg btn-success btn-block" type="submit">가입</button>
 		</form>
 	</div>
