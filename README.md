@@ -30,6 +30,8 @@ index.jsp에 현재 페이지 버퍼 용량과 남은 페이지 버퍼 용량을
 그리고 footer.jsp 헤더부분에 import문으로 이 코드를 가져오게 하여 출력하게 하였다. 그렇지만  강의안대로 시간 출력 코드를 작성할 시 정확한 대한민국의 시간이 뜨지 않아 새로운 코드로 작성하였다.
 패키지를 선언하고, 라이브러리를 임포트하고, 한국 표준시로 시간대를 설정하고 Calendar 클래스를 사용하여 
 현재 시간을 시, 분, 초로 분리한 후 최종 시간 문자열을 만들어 반환하였다.
+아래 사진은 WEB-INF/src/example/ShoeTime.java 파일의 코드이다.
+<img src="/screenshot/to/ShopTime.png" width="450px" height="300px" title="한국 표준시 시간대 설정" alt="ShopTime"></img><br/>
 
 ### 2023년 9월 27일 : 쇼핑몰 상품 목록 페이지 추가 - 5주차
 
