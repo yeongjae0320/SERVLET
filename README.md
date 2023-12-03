@@ -43,6 +43,8 @@ body_main.jsp를 수정하는데 dto 패키지의 Product 패키지 연동을 �
 <br>
 * 연습문제 -> 같은 방법으로 6개의 상품을 더하여 총 9개의 상품을 저장하여 출력하였다.
 기존 image 폴더에 product 폴더를 만들어서 9개의 이미지를 저장하였다. 그리고, 자바 빈즈를 활용하여 이미지를 추가하였다.
+아래 사진은 image/product/P1234~P1242의 사진이다.
+<img src="screenshot/ProductImage9.png" width="100%" title="이미지9개" alt="9개의 이미지">
 
 ### 2023년 10월 4일 : 쇼핑몰 상품 상세 페이지 추가 - 6주차
 
