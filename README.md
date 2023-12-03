@@ -31,7 +31,7 @@ index.jsp에 현재 페이지 버퍼 용량과 남은 페이지 버퍼 용량을
 패키지를 선언하고, 라이브러리를 임포트하고, 한국 표준시로 시간대를 설정하고 Calendar 클래스를 사용하여 
 현재 시간을 시, 분, 초로 분리한 후 최종 시간 문자열을 만들어 반환하였다.
 아래 사진은 WEB-INF/src/example/ShoeTime.java 파일의 코드이다.
-<img src="screenshot/ShopTime.png" width="100%" title="한국 표준시 시간대 설정" alt="ShopTime">
+<img src="screenshot/ShopTime.png" width="100%" alt="한국 표준시 시간대 설정">
 
 ### 2023년 9월 27일 : 쇼핑몰 상품 목록 페이지 추가 - 5주차
 
@@ -44,7 +44,7 @@ body_main.jsp를 수정하는데 dto 패키지의 Product 패키지 연동을 �
 * 연습문제 -> 같은 방법으로 6개의 상품을 더하여 총 9개의 상품을 저장하여 출력하였다.
 기존 image 폴더에 product 폴더를 만들어서 9개의 이미지를 저장하였다. 그리고, 자바 빈즈를 활용하여 이미지를 추가하였다.
 아래 사진은 image/product/P1234~P1242의 사진이다.
-<img src="screenshot/ProductImage9.png" width="100%" title="이미지9개" alt="9개의 이미지">
+<img src="screenshot/ProductImage9.png" width="100%" alt="9개의 이미지">
 
 ### 2023년 10월 4일 : 쇼핑몰 상품 상세 페이지 추가 - 6주차
 
@@ -60,6 +60,8 @@ index.jsp와 다른 점은 이 파일은 상품의 상세 정보만 표시한다
 * 연습문제 -> 전체 상품 상세페이지, 메인 페이지도 예외처리 하였다. index.jsp에 대한 예외처리 페이지를 만들었다.
 web.xml에서 error-page, error-code:404, location 태그를 사용하고 파일명은 exception 폴더 안에 main_server_downtime.jsp를 만들어 입력했다.
 만들어진 예외처리는 주석처리를 하여 현재 실행되게 해두지는 않았다.
+아래 사진은 page에 잘못 접근했을 때 뜨는 예외처리 페이지이다.
+<img src="screenshot/Exception.png" width="100%" alt="예외처리 페이지">
 
 ### 2023년 10월 11일 : 쇼핑몰 상품 등록 추가 - 7주차
 
