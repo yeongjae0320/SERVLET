@@ -129,6 +129,8 @@ product_cart_remove_all.jsp 페이지는 cartid 매개변수를 장바구니 아
 장바구니 목록이 null인지 확인하는 if (cartList == null)을 하여 
 장바구니 목록이 null이거나 아직 생성되지 않은 경우 ArrayList를 생성하고 새로 생성한 또는 이미 존재하던 cartList를 세션에 cartList라는 키로 설정해주는 코드를 추가 구현해주었다.
 이로써 에러가 더이상 발생하지 않는다. 네 번째, 일반 상품 상세 페이지와 관리자 페이지의 상세 페이지는 경로가 살짝 다르기 때문에 수정을 해주었다.
+아래 사진은 cart/product_card_remove.jsp 파일에서 상품 삭제 오류를 해결한 코드이다.
+<img src="screenshot/SessionErrorSolve.png" width="100%" alt="상품 삭제 에러">
 
 ### 2023년 11월 8일 : 쇼핑몰 주문 처리 페이지 추가 - 11주차
 
