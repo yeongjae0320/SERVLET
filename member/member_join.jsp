@@ -14,7 +14,7 @@
 		</div>
 	</div>
 <div class="container">
-    <form class="form-signin" action="registerServlet" method="post">
+    <form class="form-signin" action="login_user.jsp" method="post">
         <div class="form-group row">
             <label for="inputUserid" class="col-sm-2 col-form-label">아이디</label>
             <div class="col-sm-3">
