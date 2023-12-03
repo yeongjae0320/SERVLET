@@ -175,6 +175,11 @@ validateDate() 함수에서는 사용자가 입력한 날짜 값을 가져와 Da
 세 번째, 우편 번호와 주소를 검색을 통해 입력되도록 수정하였다.
 다음 주소 API를 활용하여 주소 검색 팝업을 띄우고 사용자가 선택한 주소 정보를 화면에 표시하는 함수를 구현하였다.
 이 과정을 진행하면서 기존 order_info.jsp에서 우편번호 영역을 제거하였다.
+아래 사진은 11주차 연습문제 내용이다.
+<img src="screenshot/OrderInfo.png" width="100%" alt="날짜 선택">
+<img src="screenshot/OrderInfo2.png" width="100%" alt="날짜 선택2">
+<img src="screenshot/OrderInfo3.png" width="100%" alt="날짜 선택3">
+<img src="screenshot/OrderInfo4.png" width="100%" alt="배송 주소">
 
 ### 2023년 11월 15일 : 쇼핑몰 상품 관리 페이지 추가(1) - 12주차
 
