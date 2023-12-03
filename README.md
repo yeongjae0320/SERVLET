@@ -219,6 +219,8 @@ Update mysql.user SET password = password('123654') where user = 'root'; 이 코
 select host from user;을 입력하면 host로 아이피와 ::1, localhost가 있는데, host에 대해서도 혹시 몰라 
 Update mysql.user SET password = password('123654') where host = '';문을 사용하여 각 host에 대해서도 password를 바꿔주었다.
 그리고 db_conn.jsp파일을 포함하여 password가 123123으로 저장했던 파일들을 123654로 바꿔주었다.
+아래 사진은 12주차 연습문제 내용이다.
+<img src="screenshot/ProductDatabase.png" width="100%" alt="상품 데이터 추가">
 
 ### 2023년 11월 22일 : 쇼핑몰 상품 관리 페이지 추가(2) - 13주차
 
