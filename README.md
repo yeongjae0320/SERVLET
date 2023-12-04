@@ -286,7 +286,7 @@ board 폴더 안에 board_view.jsp 파일을 생성하였다.
 
 ### 수업 이외에 기능을 추가로 구현한 것에 대하여...
 
-* 1. login.jsp 파일에서 마우스의 이동을 감지하여 10초 동안 움직이지 않았을 경우 index.jsp 파일로 이동하는 코드를 구현하였다.
+* 첫 번째, login.jsp 파일에서 마우스의 이동을 감지하여 10초 동안 움직이지 않았을 경우 index.jsp 파일로 이동하는 코드를 구현하였다.
 아래 사진은 마우스의 이동을 감지하는 코드와 실제 화면이다.
 <img src="screenshot/MouseMove.png" width="100%" alt="로그인 마우스 이동">
 <img src="screenshot/MouseMove2.png" width="100%" alt="로그인 마우스 이동2">
