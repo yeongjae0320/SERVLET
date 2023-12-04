@@ -5,7 +5,32 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+    <script>
+        var mouseMoved = false;
+    // 마우스 이동 감지
+    document.addEventListener('mousemove', function () {
+        mouseMoved = true;
+    });
+    // 페이지가 로드될 때 mouseMoved를 false로 초기화
+    window.addEventListener('load', function () {
+        mouseMoved = false;
+        resetMouseDetection();
+    });
+    function resetMouseDetection() {
+        setTimeout(function () {
+            if (!mouseMoved) {
+                // 마우스가 10초 동안 움직이지 않았을 때 실행할 동작
+                alert("일정 시간 동안 마우스 움직임이 감지되지 않아 메인 페이지로 이동합니다.");
+                window.location.href = '../index.jsp';
+            }
+        }, 10000); // 10초 설정 (단위: 밀리초)
+    }
+    // 페이지가 다시 로드되었을 때 타이머를 재설정
+    window.addEventListener('focus', function () {
+        resetMouseDetection();
+    });
+    </script>
+    </head>
 <body>
 	<jsp:include page="../top_menu.jsp" />
 	<div class="jumbotron">
