@@ -22,6 +22,31 @@
         }
     }
 </script>
+        <script>
+        var mouseMoved = false;
+    // 마우스 이동 감지
+    document.addEventListener('mousemove', function () {
+        mouseMoved = true;
+    });
+    // 페이지가 로드될 때 mouseMoved를 false로 초기화
+    window.addEventListener('load', function () {
+        mouseMoved = false;
+        resetMouseDetection();
+    });
+    function resetMouseDetection() {
+        setTimeout(function () {
+            if (!mouseMoved) {
+                // 마우스가 30초 동안 움직이지 않았을 때 실행할 동작
+                alert("일정 시간 동안 마우스 움직임이 감지되지 않아 장바구니 페이지로 이동합니다.");
+                window.location.href = '../cart/product_cart.jsp';
+            }
+        }, 30000); // 30초 설정 (단위: 밀리초)
+    }
+    // 페이지가 다시 로드되었을 때 타이머를 재설정
+    window.addEventListener('focus', function () {
+        resetMouseDetection();
+    });
+    </script>
         <title>배송 정보</title>
     </head>
 <body>
