@@ -293,3 +293,5 @@ board 폴더 안에 board_view.jsp 파일을 생성하였다.
 
 * 두 번째, order_info.jsp 파일에서 마우스의 이동을 감지하여 30초 동안 움직이지 않았을 경우 이전 장바구니 페이지인 product_cart.jsp 파일로 이동하는 코드를 구현하였다.
 아래 사진은 마우스의 이동을 감지하는 코드와 실제 화면이다.
+<img src="screenshot/MouseMove3.png" width="100%" alt="장바구니 마우스 이동">
+<img src="screenshot/MouseMove4.png" width="100%" alt="장바구니 마우스 이동2">
